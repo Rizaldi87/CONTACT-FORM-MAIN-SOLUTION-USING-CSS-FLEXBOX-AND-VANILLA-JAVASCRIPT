@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Rizaldi87/CONTACT-FORM-MAIN-SOLUTION-USING-CSS-FLEXBOX-AND-VANILLA-JAVASCRIPT)
-- Live Site URL: [Add live site URL here](https://rizaldi87.github.io/CONTACT-FORM-MAIN-SOLUTION-USING-CSS-FLEXBOX-AND-VANILLA-JAVASCRIPT/)
+- Solution URL: [solution URL](https://github.com/Rizaldi87/CONTACT-FORM-MAIN-SOLUTION-USING-CSS-FLEXBOX-AND-VANILLA-JAVASCRIPT)
+- Live Site URL: [live site URL](https://rizaldi87.github.io/CONTACT-FORM-MAIN-SOLUTION-USING-CSS-FLEXBOX-AND-VANILLA-JAVASCRIPT/)
 
 ## My process
 
