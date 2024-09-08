@@ -1,0 +1,189 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(148, 38%, 91%);
+  font-family: "Karla", sans-serif;
+  overflow-x: hidden;
+}
+.main {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.toast {
+  /* visibility: hidden; */
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translate(-50%, -1%);
+  z-index: 10;
+  background: hsl(187, 24%, 22%);
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  min-width: fit-content;
+  transition: all 0.5s ease;
+}
+.toast h1 {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 700;
+}
+.toast span {
+  font-size: 15px;
+}
+.toast.active {
+  top: 1%;
+}
+form {
+  padding: 30px;
+  border-radius: 15px;
+  width: 50%;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+form .title {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+form label {
+  font-size: 16px;
+}
+form label::after {
+  content: "*";
+  margin-left: 5px;
+  color: hsl(169, 82%, 27%);
+}
+form input {
+  border: solid 0.8px #ccc;
+  border-radius: 5px;
+  padding: 8px;
+}
+form input.invalidState {
+  border: 0.8px solid hsl(0, 66%, 54%);
+}
+form textarea.invalidState {
+  border: 0.8px solid hsl(0, 66%, 54%);
+}
+form input:focus {
+  border: 0.8px solid hsl(169, 82%, 27%);
+  outline: none;
+}
+form button {
+  background-color: hsl(169, 82%, 27%);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+.nameField {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.nameField div {
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+  gap: 5px;
+}
+.emailField {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.invalid-group {
+  color: hsl(0, 66%, 54%);
+  visibility: hidden;
+}
+.emailField input:not(:focus):invalid {
+  border: 0.8px solid hsl(0, 66%, 54%);
+}
+.emailField input:not(:focus):invalid ~ .invalid-group {
+  visibility: visible;
+}
+.queryField .innerBox {
+  display: flex;
+  justify-content: space-between;
+  /* gap: 5px; */
+}
+.queryField .innerBox div {
+  width: 46.5%;
+  border: solid 0.5px;
+  border-radius: 5px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: 0.8px solid #ccc;
+}
+.queryField .innerBox div:has(input:checked) {
+  background: hsl(148, 38%, 91%);
+  border: 0.8px solid hsl(169, 82%, 27%);
+}
+.emailField {
+  display: flex;
+  flex-direction: column;
+}
+.message {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 0.8px solid #ccc;
+  border-radius: 10px;
+  resize: none;
+}
+.message div {
+  /* margin-top: 10px; */
+  display: flex;
+  gap: 15px;
+}
+form input:checked {
+  accent-color: hsl(169, 82%, 27%);
+}
+@media only screen and (max-width: 600px) {
+  form {
+    width: 75%;
+    gap: 0px;
+  }
+  .nameField,
+  .queryField .innerBox {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+  }
+  .nameField div {
+    width: 100%;
+  }
+  .queryField .innerBox div {
+    width: 100%;
+    padding: 15px 1px 15px 1px;
+  }
+  textarea {
+    height: 300px;
+  }
+}
