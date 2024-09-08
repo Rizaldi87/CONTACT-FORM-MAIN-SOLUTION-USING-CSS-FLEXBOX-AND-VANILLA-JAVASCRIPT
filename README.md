@@ -53,5 +53,3 @@ I learn a lot about html css and basic javascript. It help me to understand more
 ## Author
 
 - Frontend Mentor - [@Rizaldi87](https://www.frontendmentor.io/profile/Rizaldi87)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
